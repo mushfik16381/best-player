@@ -5,3 +5,35 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+#banner-part{
+    position: relative;
+}
+.banner-part{
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+    padding: 150px 0;
+    
+}
+.banner-part h1{
+    color: #FF5E19;
+    font-weight: 700;
+    font-size: 46px;
+}
+.banner-part p{
+    width: 48%;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.banner-part .player{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner-part .football{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
