@@ -5,6 +5,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
 #banner-part{
     position: relative;
 }
@@ -48,22 +49,74 @@ body{
     margin: 0 auto;
 
 }
-.card{
+.box{
     border-color: #434343;
 }
-.card-body{
+.box img{
+    width: 100%;
+}
+.box-body{
    background-color: #2c2c2c; 
    color: #fff;
    text-align: center;
 }
-.card-text span{
+.box-text span{
     padding: 0 8px;
 }
-.card-text .line{
+.box-text .line{
     border-right: 1px solid #fff;
 }
 .player-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+}
+.player-price{
+    color: #fff;
+}
+.budget {
+    background-color: #0D0D0D;
+    padding: 40px 0;
+    border-radius: 5px;
+}
+.budget h3{
+    margin-bottom: 0;
+    line-height: 25px;
+}
+.input-box{
+    width: 100px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    color: #fff;
+    padding-left: 5px;
+}
+input::placeholder{
+    font-size: 12px;
+    padding-left: 5px;
+}
+.budget h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+.budget ol{
+    padding-left: 3rem;
+}
+.budget li{
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+h2{
+    position: relative;
+}
+h2::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(23%, 109%);
+    background-image: url(../images/shape.png ) ;
+    background-repeat: no-repeat;
+    content: "";
 }

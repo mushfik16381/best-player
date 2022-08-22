@@ -1,0 +1,31 @@
+const playerArray = [];
+function diplayPlayer(player){
+
+    const listBody = document.getElementById('list-body');
+    listBody.innerHTML =""
+    for(let i = 0; i < player.length ; i++){
+        const name = playerArray[i].Name;
+
+        const li =document.createElement('li');
+
+        li.innerHTML = `
+        ${name}
+        `
+        listBody.appendChild(li)
+    }
+    
+
+}
+function selected(element){
+
+    const playerName = element.parentNode.children[0].innerText;
+
+
+    const playerObj ={
+        Name : playerName,
+    }
+        
+    playerArray.push(playerObj);
+
+    diplayPlayer(playerArray)
+}
