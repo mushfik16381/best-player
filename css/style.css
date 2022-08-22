@@ -37,3 +37,33 @@ body{
     bottom: 0;
     right: 0;
 }
+
+#player-part{
+    background-color: #151515;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+#player-part .container{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.card{
+    border-color: #434343;
+}
+.card-body{
+   background-color: #2c2c2c; 
+   color: #fff;
+   text-align: center;
+}
+.card-text span{
+    padding: 0 8px;
+}
+.card-text .line{
+    border-right: 1px solid #fff;
+}
+.player-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
