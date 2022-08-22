@@ -2,8 +2,10 @@ const playerArray = [];
 function diplayPlayer(player){
 
     const listBody = document.getElementById('list-body');
-    listBody.innerHTML =""
+    listBody.innerHTML ="";
+
     for(let i = 0; i < player.length ; i++){
+        
         const name = playerArray[i].Name;
 
         const li =document.createElement('li');
@@ -11,8 +13,17 @@ function diplayPlayer(player){
         li.innerHTML = `
         ${name}
         `
+        
+        
         listBody.appendChild(li)
     }
+    if(player.length > 5){
+        alert('You can select only 5 players');
+    }
+    
+
+    
+    
     
 
 }
@@ -26,6 +37,7 @@ function selected(element){
     }
         
     playerArray.push(playerObj);
+    diplayPlayer(playerArray);
 
-    diplayPlayer(playerArray)
+    
 }
