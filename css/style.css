@@ -98,6 +98,9 @@ input::placeholder{
     font-weight: 400;
     font-size: 16px;
 }
+.budget h2{
+    margin-bottom: 2rem !important;
+}
 .budget ol{
     padding-left: 3rem;
 }
